@@ -9,7 +9,7 @@ body {
   background-color: #3f3f3f;
   padding: 60px;
   border-radius: 20px;
-  height:  200px;
+  height:  250px;
   margin-top: 10px;
 }
 
@@ -24,4 +24,12 @@ body {
   text-align: center;
   font-size: 15px;
   font-weight:bolder;
+}
+
+
+#startBtn{
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }

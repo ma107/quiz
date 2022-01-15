@@ -3,6 +3,10 @@ const player = new talkify.Html5Player();
 player.forceLanguage('ja');
 player.setRate(0.8);
 
+const uttr = new SpeechSynthesisUtterance();
+uttr.lang = "ja-JP"
+
+
 // クイズバンク
 let quizBank = [
     "好きな仮面ライダーは何だ？",
@@ -14,7 +18,6 @@ let quizBank = [
     "ママはディズニーが好きである。まるかばつか？",
     "",
 ]
-
 var quizNum = 0;
 
 // イベントの設定
@@ -22,7 +25,10 @@ startBtn.addEventListener("click", function(){
     $("#startSound").get(0).play();
 
     $('#quizTxt').text(quizBank[quizNum]);
-    player.playText(quizBank[quizNum]);
+    //    player.playText(quizBank[quizNum]);
+    uttr.text = quizBank[quizNum];
+    speechSynthesis.speak(uttr);
+
 });
 
 correctBtn.addEventListener("click", function(){

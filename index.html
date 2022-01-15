@@ -7,11 +7,26 @@
     </head>
     <body>
         <div id="wrapper">
-            <img src="./assets/logo.png" id="logo" alt="logo" />
-            <p id="title">クイズ</p>
+            <img src="./assets/quiz.png" id="logo"  width="200" height="100" alt="logo" />
             <button id="startBtn">Start</button>
+
+            <h3 id="quizTxt"></h3>
+
+            <div id="btnWrapper">
+                <button id="correctBtn">正 解</button>
+                <button id="wrongBtn">残 念</button>
+            </div>
+
+            <audio src="./assets/sound/startSound.mp3" id="startSound"></audio>
+            <audio src="./assets/sound/correctSound.mp3" id="correctSound"></audio>
+            <audio src="./assets/sound/wrongSound.mp3" id="wrongSound"></audio>
+
         </div>
 
+        
+        <script src="./talkify.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="./main.js"></script>
     </body>
 </html>

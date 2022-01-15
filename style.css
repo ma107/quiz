@@ -9,7 +9,7 @@ body {
   background-color: #3f3f3f;
   padding: 60px;
   border-radius: 20px;
-  height:  250px;
+  height:  300px;
   margin-top: 10px;
 }
 
@@ -28,6 +28,36 @@ body {
 
 
 #startBtn{
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#btnWrapper{
+	display:flex;
+	width:100%;
+	height:50px;
+	color:#FFF;
+	font-size:50px;
+	justify-content: center;
+	align-items: center;
+}
+
+#correctBtn{
+  padding: 10px;
+  margin: 10px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#wrongBtn{
+  padding: 10px;
+  margin: 10px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#quizTxt{
+  text-align: center;
   display: block;
   margin: 0 auto;
   padding: 10px;
